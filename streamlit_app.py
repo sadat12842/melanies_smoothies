@@ -11,11 +11,11 @@ st.write(
 #     'What is your favorite fruit?', 
 #     ('Banana', 'Strawberries', 'Peaches')
 # )
+st.write("yXXXX", st.secrets)
 # st.write('Your favorite fruit is:', option)
 name_on_smoothie = st.text_input('Name on Smoothie')
 st.write('The name on your Smoothie will be: ', name_on_smoothie)
 cnx = st.connection("snowflake")
-st.write("yXXXX", st.secrets)
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options")\
     .select(col('fruit_name'))
