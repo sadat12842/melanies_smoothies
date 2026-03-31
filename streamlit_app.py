@@ -13,15 +13,15 @@ st.write(
 # )
 ######################################
 
-st.write("SECRETS:", dict(st.secrets))
+# st.write("SECRETS:", dict(st.secrets))
 
-if "connections" in st.secrets:
-    st.write("connections exists")
-if "snowflake" in st.secrets.get("connections", {}):
-    st.write("snowflake exists")
+# if "connections" in st.secrets:
+#     st.write("connections exists")
+# if "snowflake" in st.secrets.get("connections", {}):
+#     st.write("snowflake exists")
 
-conn = st.connection("snowflake")
-st.write("connection created")
+# conn = st.connection("snowflake")
+# st.write("connection created")
 #################################################
 # st.write('Your favorite fruit is:', option)
 name_on_smoothie = st.text_input('Name on Smoothie')
