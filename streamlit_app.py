@@ -11,7 +11,18 @@ st.write(
 #     'What is your favorite fruit?', 
 #     ('Banana', 'Strawberries', 'Peaches')
 # )
-st.write("AAAAAA", dict(st.secrets)) 
+######################################
+
+st.write("SECRETS:", dict(st.secrets))
+
+if "connections" in st.secrets:
+    st.write("connections exists")
+if "snowflake" in st.secrets.get("connections", {}):
+    st.write("snowflake exists")
+
+conn = st.connection("snowflake")
+st.write("connection created")
+#################################################
 # st.write('Your favorite fruit is:', option)
 name_on_smoothie = st.text_input('Name on Smoothie')
 st.write('The name on your Smoothie will be: ', name_on_smoothie)
