@@ -11,7 +11,7 @@ st.write(
 #     'What is your favorite fruit?', 
 #     ('Banana', 'Strawberries', 'Peaches')
 # )
-st.write("yXXXX", st.secrets)
+st.write("AAAAAA", dict(st.secrets)) 
 # st.write('Your favorite fruit is:', option)
 name_on_smoothie = st.text_input('Name on Smoothie')
 st.write('The name on your Smoothie will be: ', name_on_smoothie)
